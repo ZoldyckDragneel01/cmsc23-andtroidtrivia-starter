@@ -33,6 +33,9 @@ class MainActivity : AppCompatActivity() {
         val navController = this.findNavController(R.id.myNavHostFragment)
         NavigationUI.setupActionBarWithNavController(this,navController)
 
+        NavigationUI.setupWithNavController(binding.navView, navController)
+
+
     }
     //up button installed
     override fun onSupportNavigateUp(): Boolean {
